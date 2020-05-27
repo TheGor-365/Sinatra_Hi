@@ -5,20 +5,21 @@ get '/' do
 end
 
 get '/contacts' do
-  @title = 'Contacts'
-  @message = 'Phone 111'
-  erb :message
+  under_construction
 end
 
 get 'faq' do
-  @title = 'FAQ'
-  @message = 'Under construction'
-  erb :message
+  under_construction
 end
 
 get '/something'do
-  @title = 'Something'
-  @message = 'Something else'
+  under_construction
+end
+
+def under_construction
+  @title = 'Under construction'
+  @message = 'This page is under construction'
+
   erb :message
 end
 
